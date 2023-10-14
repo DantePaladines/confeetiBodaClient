@@ -1,0 +1,571 @@
+.container_welcome{
+    text-align: center;
+}
+
+.navbar_admin{
+  background: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name_admin{
+  padding: 1em;
+}
+
+.logout_admin{
+  padding: 1em;
+}
+/*
+.btn_logout{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+  color: #ffffff;
+  background: radial-gradient(circle at 10.6% 22.1%, rgb(206, 18, 18) 0%, rgb(177, 4, 4) 100.7%);
+  cursor: pointer;
+  border-color: none;
+}
+*/
+
+
+.container_Info_General{
+  display: flex;
+  justify-content: center;
+}
+
+.container_invites{
+  height: 100%;
+  max-width: 100%;
+  padding: 0.8rem;
+  border-radius: 10px;
+  background-color: rgb(207, 223, 241);
+  gap: 0.4rem;
+  display: flex;
+  justify-content: center;
+  margin: 0px 10px 0px 10px;
+}
+
+.container_meat{
+  height: 100%;
+  max-width: 100%;
+  padding: 0.8rem;
+  border-radius: 10px;
+  background-color: #79c2d0;
+  gap: 0.4rem;
+  display: flex;
+  justify-content: center;
+  margin: 0px 10px 0px 10px;
+}
+
+.container_chicken{
+  height: 100%;
+  max-width: 100%;
+  padding: 0.8rem;
+  border-radius: 10px;
+  background-color: #53a8b6;
+  gap: 0.4rem;
+  display: flex;
+  justify-content: center;
+  margin: 0px 10px 0px 10px;
+}
+
+.container_accept{
+  height: 100%;
+  max-width: 100%;
+  padding: 0.8rem;
+  border-radius: 10px;
+  background-color: rgb(207, 241, 207);
+  gap: 0.4rem;
+  display: flex;
+  justify-content: center;
+  margin: 0px 10px 0px 10px;
+}
+
+.container_fish{
+  height: 100%;
+  max-width: 100%;
+  padding: 0.8rem;
+  border-radius: 10px;
+  background-color: #5585b5;
+  gap: 0.4rem;
+  display: flex;
+  justify-content: center;
+  margin: 0px 10px 0px 10px;
+}
+
+.container_rejected{
+  height: 100%;
+  max-width: 100%;
+  padding: 0.8rem;
+  border-radius: 10px;
+  background-color:rgb(246, 204, 204);
+  gap: 0.4rem;
+  display: flex;
+  justify-content: center;
+  margin: 0px 10px 0px 10px;
+}
+
+.general{
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.container_admin {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  padding: 1em;
+}
+
+/* Estilos para el contenedor principal 
+.container_admin {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+}
+*/
+.container_panel_admin {
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 60%; /* Ancho completo en dispositivos móviles */
+  overflow-x: auto; /* Barra de desplazamiento horizontal si es necesario */
+}
+
+/* Estilos para la tabla */
+.container_panel_table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Estilos para el encabezado de la tabla */
+.container_options_columns {
+  background-color: #000000;
+  color: white;
+  border-radius: 20px;
+  margin-bottom: 6px;
+}
+
+.container_options {
+  font-weight: bold;
+}
+
+.container_options th,
+.container_options td {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Estilos para las filas alternas */
+.container_general {
+  background-color: #e0e0e0;
+}
+
+/* Estilos para las celdas de aceptar y más información */
+th,
+td:last-child {
+  width: 120px;
+  text-align: center;
+}
+
+.container_Uno{
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilos para los botones de reset y excel */
+.container_excel{
+  padding: 0.5em;
+  align-items: center;
+}
+
+/* Estilos para los botones */
+.button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.container_buttons {
+  margin-top: 20px; /* Espaciado superior */
+  flex-wrap: wrap; /* Envuelve los botones si no caben en una fila */
+}
+
+@media screen and (max-width: 940px) {
+
+  .container_panel_admin {
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 90%; /* Ancho completo en dispositivos móviles */
+    overflow-x: auto; /* Barra de desplazamiento horizontal si es necesario */
+  }
+}
+
+/* Media Query para pantallas pequeñas (por ejemplo, smartphones) */
+@media screen and (max-width: 480px) {
+  /* Ajusta los estilos según tus necesidades */
+  .container_panel_admin {
+    padding: 10px;
+  }
+
+  th,
+  td {
+    padding: 5px;
+  }
+
+  .container_buttons {
+    flex-direction: column; /* Apila los botones en dispositivos móviles */
+    align-items: center; /* Centra los botones en dispositivos móviles */
+  }
+
+  .button {
+    margin-top: 10px; /* Espaciado entre botones en dispositivos móviles */
+  }
+
+  .container_panel_admin {
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Ancho completo en dispositivos móviles */
+    overflow-x: auto; /* Barra de desplazamiento horizontal si es necesario */
+  }
+}
+
+.reset{
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #131313fe;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.excel{
+  width: 50px;
+  height: 40px;
+  border-radius: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #131313fe;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.excelDrive{
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #131313fe;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.title{
+  text-align: center;
+  font-weight: 400;
+  font-size: medium;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.titleDos{
+  text-align: center;
+  font-weight: 500;
+  font-size: large;
+}
+
+.container_numerico{
+  display: flex;
+  margin-left: 5px;
+}
+
+
+.paginationIzquierda{
+  transform: scaleX(-1);
+}
+
+.container_pagination{
+  display: flex;
+  justify-content: start;
+  margin-top: 15px;
+}
+
+.pagination{
+  display: flex;
+  align-items: center;
+}
+
+.container_next{
+  margin-left: 20px;
+  
+}
+
+.container_prevt{
+  margin-right: 20px;
+}
+
+.container_number_pagination{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1em;
+}
+
+@media only screen and (max-width: 480px) {
+  .container_Info_General{
+
+  }
+
+  .container_invites{
+    padding: 0.5rem;
+    margin: 0px 5px 0px 5px;
+  }
+
+  .container_meat{
+    padding: 0.5rem;
+    margin: 0px 5px 0px 5px;
+  }
+
+  .container_chicken{
+    padding: 0.5rem;
+    margin: 0px 5px 0px 5px;
+  }
+
+  .container_fish{
+    padding: 0.5rem;
+    margin: 0px 5px 0px 5px;
+  }
+
+  .container_accept{
+    padding: 0.5rem;
+    margin: 0px 5px 0px 5px;
+  }
+
+  .container_rejected{
+    padding: 0.5rem;
+    margin: 0px 5px 0px 5px;
+  }
+
+  .container_panel_admin {
+    padding: 10px;
+  }
+
+  th,
+  td {
+    padding: 5px;
+  }
+  
+}
+
+.container_carga {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top: 4px solid #3498db;
+  width: 45px;
+  height: 45px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+.carga {
+  font-size: 24px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.container_error{
+  text-align: center;
+}
+
+.error_message{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+
+/* Estilo para centrar el contenido verticalmente y horizontalmente */
+.container_center {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  border-radius: 50px;
+}
+
+.container_title{
+  text-align: center;
+  padding: 0.7rem;
+  margin: 20px 0px 20px 0px ;
+}
+
+.parrafo_title{
+  font-size: 1.7em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Estilo para el contenedor del formulario */
+.container_form {
+  background-color: #ffcbcb;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  height: 500px;
+}
+
+.container_div_form{
+  width: 300px;
+  height: 400px;
+}
+
+.form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.container_name{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container_password{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.input_name{
+  padding: 7px 9px 7px 9px;
+  border-radius: 10px;
+  border: 1px solid #ba7127;
+}
+
+.input_name_error{
+  padding: 7px 9px 7px 9px;
+  border-radius: 10px;
+  border: 1px solid #ff0000;
+}
+
+.input_name:focus{
+  border-color: #007bff;
+  outline: none;
+}
+
+.input_password{
+  padding: 7px 9px 7px 9px;
+  border-radius: 10px;
+  border: 1px solid #ba7127;
+}
+
+.input_password_error{
+  padding: 7px 9px 7px 9px;
+  border-radius: 10px;
+  border: 1px solid #ff0000;
+}
+
+.input_password:focus{
+  border-color: #007bff;
+  outline: none;
+}
+
+.name{
+  text-align: start;
+  margin: 0px 0px 10px 0px;
+}
+
+.password{
+  text-align: start;
+  margin: 0px 0px 10px 0px;
+}
+
+.container_button{
+  display: flex;
+  justify-content: center;
+}
+
+.button{
+  padding: 0.5rem;
+  width: 80px;
+  background: #368eff;
+  border-radius: 5px;
+  color: #ffffff;
+  border-color: transparent;
+}
+
+/* ESTILOS DE VENTANA MODAL */
+.modal {
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  overflow: auto;
+  opacity: 0; /* Inicialmente, la opacidad es 0 para ocultar el modal */
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+/* Estilos para el contenido del modal */
+.modal_content {
+  width: 100%;
+  height: 80%;
+  transform: translate(11%, 11%);
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  max-width: 80%; /* Ancho máximo del contenido del modal */
+  transition: transform 0.3s;
+}
+
+.modal.show {
+  display: block;
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* Estilos para el botón de cierre (X) */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #777;
+  cursor: pointer;
+}
+
+/* Estilos para el botón de cierre al pasar el mouse */
+.close:hover {
+  color: #333;
+}

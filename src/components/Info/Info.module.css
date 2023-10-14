@@ -1,0 +1,11 @@
+.container_div_info{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 1rem;
+}
+
+.img_info_event{
+    max-width: 100%;
+    width: 500px;
+}

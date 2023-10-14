@@ -1,0 +1,254 @@
+.container_register{
+    margin: 0 auto;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container_form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    width: 736px;
+    max-width: 100%;
+    gap: 1rem;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 480px) {
+
+    .container_form{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0.3rem;
+        width: 736px;
+        max-width: 100%;
+        gap: 1rem;
+        margin-bottom: 40px;
+    }
+
+}
+
+.div_number_guests{
+    display: flex;
+    justify-content: space-between;
+}
+
+.div_name_guests{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container_platos_comida{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container_platillos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container_info_inputs{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container_button{
+    display: flex;
+    justify-content: center;
+}
+
+.container_radio{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.container_accept{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container_decline{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input_select{
+    padding: 7px 9px 7px 9px;
+    border-radius: 15px;
+    border: 1px solid #ba7127;
+}
+
+.input_select:focus{
+    border-color: #007bff;
+    outline: none;
+}
+
+.input_name_guests{
+    padding: 7px 9px 7px 9px;
+    border-radius: 15px;
+    border: 1px solid #ba7127;
+}
+
+.input_name_guests:focus{
+    border-color: #007bff;
+    outline: none;
+}
+
+.input_name_guests_error{
+    padding: 7px 9px 7px 9px;
+    border-radius: 15px;
+    border: 1px solid #ff0000;
+}
+
+.input_dietary{
+    padding: 7px 9px 7px 9px;
+    border-radius: 15px;
+    border: 1px solid #ba7127;
+}
+
+.input_dietary:focus{
+    border-color: #007bff;
+    outline: none;
+}
+
+.input_dietary_error{
+    padding: 7px 9px 7px 9px;
+    border-radius: 15px;
+    border: 1px solid #ff0000;
+}
+
+.input_meat{
+    padding: 7px 9px 7px 9px;
+    border-radius: 15px;
+    border: 1px solid #ba7127;
+}
+
+.input_meat:focus{
+    border-color: #007bff;
+    outline: none;
+}
+
+.input_chicken{
+    padding: 7px 9px 7px 9px;
+    border-radius: 15px;
+    border: 1px solid #ba7127;
+}
+
+.input_chicken:focus{
+    border-color: #007bff;
+    outline: none;
+}
+
+.input_fish{
+    padding: 7px 9px 7px 9px;
+    border-radius: 15px;
+    border: 1px solid #ba7127;
+}
+
+.input_fish:focus{
+    border-color: #007bff;
+    outline: none;
+}
+
+.input_name{
+    padding: 7px 9px 7px 9px;
+    border-radius: 15px;
+    border: 1px solid #ba7127;
+}
+
+.input_name:focus{
+    border-color: #007bff;
+    outline: none;
+}
+
+.input_name_error{
+    padding: 7px 9px 7px 9px;
+    border-radius: 15px;
+    border: 1px solid #ff0000;
+}
+
+.input_phone{
+    padding: 7px 9px 7px 9px;
+    border-radius: 15px;
+    border: 1px solid #ba7127;
+}
+
+.input_phone:focus{
+    border-color: #007bff;
+    outline: none;
+}
+
+.input_phone_error{
+    padding: 7px 9px 7px 9px;
+    border-radius: 15px;
+    border: 1px solid #ff0000;
+}
+
+.input_email{
+    padding: 7px 9px 7px 9px;
+    border-radius: 15px;
+    border: 1px solid #ba7127;
+}
+
+.input_email:focus{
+    border-color: #007bff;
+    outline: none;
+}
+
+.input_email_error{
+    padding: 7px 9px 7px 9px;
+    border-radius: 15px;
+    border: 1px solid #ff0000;
+}
+
+.btn{
+    color: #000000;
+    border: 1px solid #ba7127;
+    font-family: 'Trajan Pro Regular';
+    font-weight: 300;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 150px;
+}
+
+.parrafo{
+    font-family: 'Trajan Pro Regular';
+    color: #000000;
+}
+
+@font-face {
+    font-family: 'Trajan Pro Regular';
+    src: url('../../images/Trajan\ Pro\ Regular.ttf');
+    font-weight: bold;
+    font-style: bold;
+}
+
+.input_accept{
+    border-color: rgb(22, 22, 255);
+}
+
+.error_accept{
+    border-color: rgb(255, 0, 0);
+}

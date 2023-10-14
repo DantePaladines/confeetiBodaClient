@@ -1,0 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.App{
+  background-image: url("./images/FONDO\ FLORES\ BAJO.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
