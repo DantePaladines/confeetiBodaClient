@@ -3,21 +3,21 @@ import style from "./admins.module.css";
 import { useSelector, useDispatch } from "react-redux";
 import { 
     GetUsersAdmins, 
-    GenerateExcel, 
-    Logout, 
-    RefreshToken, 
+//    GenerateExcel, 
+//    Logout, 
+//    RefreshToken, 
     DeleteUserAdmin, 
     UpdateUserAdmins
 } from "../../../Redux/action.js";
-import iconoWasa from "../../../images/whatsapp.png";
-import asiste from "../../../images/comprobado.png";
-import noAsiste from "../../../images/cancelar.png";
-import masInfo from "../../../images/advertencia.png";
+//import iconoWasa from "../../../images/whatsapp.png";
+//import asiste from "../../../images/comprobado.png";
+//import noAsiste from "../../../images/cancelar.png";
+//import masInfo from "../../../images/advertencia.png";
 import Swal from "sweetalert2";
 import { Link, useNavigate } from "react-router-dom";
 import Pagination from "../../../components/Pagination/pagination";
-import exit from "../../../images/salida.png";
-import excel from "../../../images/sobresalir.png";
+//import exit from "../../../images/salida.png";
+//import excel from "../../../images/sobresalir.png";
 //import reset from "../../images/flecha-circular.png";
 import cerrar from "../../../images/cerrar.png";
 import tacho from "../../../images/tacho.png";

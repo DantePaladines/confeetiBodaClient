@@ -241,19 +241,34 @@ const Form = ({socket}) => {
         }
     }, [error, dispatch])
 
+
+    const [isFinished, setIsFinished] = useState(false);
+
+    useEffect(() => {
+      if (isFinished) {
+        document.getElementById("decline").disabled = true;
+        document.getElementById("accept").disabled = true;
+      }
+    }, [isFinished]);
+
     return(
         <div className={style.container_register}>
             <form className={style.container_form} onSubmit={(e) => handleSubmit(e)}>
 
                 <div className={style.container_radio}>
                     <div className={style.container_accept}>
-                        <input className={ style.input_accept} name="acceptance" type="radio" value={1} onChange={(e) => handleAccept(e)}/>
-                        <label className={style.parrafo}>JOYFULLY ACCEPT</label>
+                        <input id="accept" className={ style.response_input} name="acceptance" type="radio" value={1} onChange={(e) => handleAccept(e)}/>
+                        <label htmlFor="accept" className={style.box_icon} >
+                            <span className={style.parrafo}>JOYFULLY ACCEPT</span>
+                        </label>
                     </div>
-                    
+
                     <div className={style.container_decline}>
-                        <input name="acceptance" type="radio" value={0} onChange={(e) => handleAccept(e)}/>
-                        <label className={style.parrafo}>REGRETFULLY DECLINE</label>
+                        <input id="decline" className={ style.response_input} name="acceptance" type="radio" value={0} onChange={(e) => handleAccept(e)}/>
+                        <label htmlFor="decline" className={style.box_icon}>
+                            <span className={style.parrafo}>REGRETFULLY DECLINE</span>
+
+                        </label>
                     </div>
                 </div>
 
@@ -322,3 +337,16 @@ const Form = ({socket}) => {
 }
 
 export default Form
+
+
+//<div className={style.container_radio}>
+//<div className={style.container_accept}>
+//    <input className={ style.input_accept} name="acceptance" type="radio" value={1} onChange={(e) => handleAccept(e)}/>
+//    <label className={style.parrafo}>JOYFULLY ACCEPT</label>
+//</div>
+//
+//<div className={style.container_decline}>
+//    <input className={ style.input_reject} name="acceptance" type="radio" value={0} onChange={(e) => handleAccept(e)}/>
+//    <label className={style.parrafo}>REGRETFULLY DECLINE</label>
+//</div>
+//</div>
