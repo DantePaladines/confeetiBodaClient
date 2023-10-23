@@ -13,6 +13,9 @@ export const GET_LOGOUT_BOSS_ADMIN = "GET_LOGOUT_BOSS_ADMIN"
 export const DELETE_USER_ADMIN = "DELETE_USER_ADMIN"
 export const UPDATE_USER_ADMINS = "UPDATE_USER_ADMINS"
 
+const deploy = 'https://confeetibodaserver.onrender.com'
+const local = 'http://localhost:3001'
+
 
 export const PostResponse = (datos) => {
 
@@ -23,7 +26,7 @@ export const PostResponse = (datos) => {
             //    console.log(datos)
             //})
             
-            const res = await axios.post("http://localhost:3001/response", datos)
+            const res = await axios.post(`${deploy}/response`, datos)
             dispatch({
                 type : POST_RESPONSE,
                 payload : res.data
@@ -43,7 +46,7 @@ export const PostResponse = (datos) => {
 export const Login = (data) => {
     return async (dispatch) => {
         try {
-            const userLogin = await axios.post("http://localhost:3001/login", data, {
+            const userLogin = await axios.post(`${deploy}/login`, data, {
                 withCredentials : true
             })
             localStorage.setItem("user", JSON.stringify(userLogin.data))
@@ -67,7 +70,7 @@ export const Login = (data) => {
 export const GetUsersAdmins = () => {
     return async (dispatch) => {
         try {
-            const Users = await axios.get("http://localhost:3001/getUser/getUsersAdmins")
+            const Users = await axios.get(`${deploy}/getUser/getUsersAdmins`)
             return dispatch({
                 type : GET_USERS_ADMINS,
                 payload : Users.data
@@ -86,7 +89,7 @@ export const Logout = () => {
     return async (dispatch) => {
         try {
 
-            const res = await axios.get("http://localhost:3001/getUser/logout", {
+            const res = await axios.get(`${deploy}/getUser/logout`, {
                 withCredentials : true
             })
             console.log(res.data)
@@ -105,12 +108,10 @@ export const RefreshToken = () => {
     return async (dispatch) => {
         try {
 
-            const res = await axios.get("http://localhost:3001/refreshToken", {
+            const res = await axios.get(`${deploy}/refreshToken`, {
                 withCredentials : true
             })
-
             //console.log(res.data)
-
             return dispatch({
                 type : REFRESH,
                 payload : res.data
@@ -126,7 +127,7 @@ export const GenerateExcel = () => {
     return async () => {
         try {
 
-            const excel = await axios.get("http://localhost:3001/getUser/generateExcel", {
+            const excel = await axios.get(`${deploy}/getUser/generateExcel`, {
                 responseType : "blob"
             })
 
@@ -156,7 +157,7 @@ export const LoginBossAdmin = (datos) => {
     return async (dispatch) => {
         try {
 
-            const bossAdmin = await axios.post("http://localhost:3001/loginBossAdmin", datos, {
+            const bossAdmin = await axios.post(`${deploy}/loginBossAdmin`, datos, {
                 withCredentials : true
             })
             //console.log(bossAdmin.data)
@@ -181,7 +182,7 @@ export const RefreshTokenBossAdmin = () => {
     return async (dispatch) => {
         try {
 
-            const res = await axios.get("http://localhost:3001/refreshTokenBossAdmin", {
+            const res = await axios.get(`${deploy}/refreshTokenBossAdmin`, {
                 withCredentials : true
             })
 
@@ -201,7 +202,7 @@ export const RefreshTokenBossAdmin = () => {
 export const LogoutBossAdmin = () => {
     return async (dispatch) => {
         try {
-            const res = await axios.get("http://localhost:3001/getUser/logoutBossAdmin", {
+            const res = await axios.get(`${deploy}/getUser/logoutBossAdmin`, {
                 withCredentials : true
             })
             //console.log(res.data)
@@ -219,7 +220,7 @@ export const LogoutBossAdmin = () => {
 export const DeleteUserAdmin = (id) => {
     return async (dispatch) => {
         try {
-            const res = await axios.delete(`http://localhost:3001/getUser/deleteUserAdmin/${id}`)
+            const res = await axios.delete(`${deploy}/getUser/deleteUserAdmin/${id}`)
             //console.log(id)
             return dispatch({
                 type : DELETE_USER_ADMIN,
@@ -236,7 +237,7 @@ export const UpdateUserAdmins = (id, datos) => {
     return async (dispatch) => {
         try {
 
-            const res = await axios.put(`http://localhost:3001/updateUserAdmin/${id}`, datos)
+            const res = await axios.put(`${deploy}/updateUserAdmin/${id}`, datos)
 
             console.log(res.data)
             if (res && res.data) {

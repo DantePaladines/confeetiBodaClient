@@ -14,7 +14,10 @@ import ProtecteRouter from './components/ProtecteRouter/protecteRouter.jsx';
 import { RefreshToken, RefreshTokenBossAdmin } from './Redux/action.js';
 import io from "socket.io-client";
 
-const socket = io("http://localhost:3001")// cambiar
+const deploy = 'https://confeetibodaserver.onrender.com/'
+const local = 'http://localhost:3001'
+
+const socket = io(deploy || local)// cambiar
 
 function App() {
 
