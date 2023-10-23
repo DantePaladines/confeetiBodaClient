@@ -5,8 +5,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { PostResponse, setError } from "../../Redux/action";
 import Swal from "sweetalert2";
 //import { loadResponse } from "../../Redux/action";
-import acceptHeard from "../../images/heartUno.png";
-import rejectHeard from "../../images/heartDos.png";
+//import acceptHeard from "../../images/heartUno.png";
+//import rejectHeard from "../../images/heartDos.png";
 
 const Form = ({socket}) => {
 
@@ -311,7 +311,6 @@ const Form = ({socket}) => {
                         <label className={style.parrafo}>FISH DISHES :</label>
                         <input className={style.input_fish} type="number" min={0} value={fish} onChange={(e) => handleFish(e)} />
                     </div>
-
                 </div>
 
                 <div className={style.container_info}>
