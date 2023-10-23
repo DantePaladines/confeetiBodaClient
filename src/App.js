@@ -17,7 +17,7 @@ import io from "socket.io-client";
 const deploy = 'https://confeetibodaserver.onrender.com/'
 const local = 'http://localhost:3001'
 
-const socket = io(deploy || local)// cambiar
+const socket = io(deploy)// cambiar
 
 function App() {
 
