@@ -205,12 +205,12 @@ export const LogoutBossAdmin = () => {
             const res = await axios.get(`${deploy}/getUser/logoutBossAdmin`, {
                 withCredentials : true
             })
-            //console.log(res.data)
+            console.log(res.data)
             return dispatch({
                 type : GET_LOGOUT_BOSS_ADMIN,
                 payload : res.data
             })
-            
+
         } catch (error) {
             console.log(error.response.data)
         }
